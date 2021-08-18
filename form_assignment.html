@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms_Assignmet </title>
+</head>
+<body>
+    <h1 align="center">Vishal Vasudevan</h1>
+    <hr >
+
+    <!-- Login -->
+    <h2 align="center">Login-Form</h2>
+    <form  method="POST" enctype="multipart/form-data">
+         <label>Username</label><br>
+         <input type="text" name="fullname" placeholder="Enter Username or email" required> <br><br>
+         <label>Password</label><br>
+        <input type="Password" name="papassword" placeholder="Password" required> <br>
+        <input type="checkbox"> Remember me <br><br>
+        <button type="submit"> LogIn </button>
+    </form>
+    <hr>
+    
+    <!-- Forgot_Passsword -->
+    <h2 align="center">Forgot_Password-Form</h2>
+
+    <form  method="POST" enctype="multipart/form-data">
+        <label>Username</label><br>
+        <input type="text" name="fullname" placeholder="Enter Email or UserName" required>  <br><br>
+        <input type="Password" name="papassword" placeholder="Enter New Password*" required> <br><br>
+         <input type="Password"name="password" placeholder="Confirm New Password*"required > <br><br>
+         <button type="submit">Reset</button>
+    </form>
+    <hr>
+
+    <!-- SignUp Form -->
+
+    <h2 align="center">SignUp-Form</h2>
+    <form  method="POST" enctype="multipart/form-data">
+        <label>Enter Full Name</label><br>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text"  name="mname" placeholder="Middle Name">
+        <input type="text"  name="lname" placeholder="Last Name" required><br><br>
+        <labe>Enter Your Email</labe><br>
+        <input type="email" name="email" placeholder="xyz@gmail.com" required><br><br>
+        <label>Enter Password</label><br>
+        <input type="password" name="papassword" placeholder="min 8 characters" maxlength="10" required> <br><br>
+        <label>Confirm Password</label><br>
+        <input type="password"  name="password" placeholder=" Confirm Password" required> <br>
+        <p>Existing User ?&nbsp<a href="#">Login </a ><br><br>
+        <button type="submit">SIGN UP</button>
+    </form>
+    <hr>
+    
+
+    <!-- Registration-Form -->
+
+    <h2 align="center">Registration-Form</h2>
+    <form  method="POST" enctype="multipart/form-data">
+        <label>Enter Full Name</label><br>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="mname" placeholder="Middle Name">
+        <input type="text" name="lname" placeholder="Last Name" required><br><br>
+        <label>Enter Your Email</label><br>
+        <input type="email" name="email" placeholder="xyz@gmail.com" required><br><br>
+        <labe>Enter Contact Number</labe><br>
+        <input type="text" name="phnnum" placeholder="Ex: 1234567890" maxlength="10" required><br><br>
+        <label>Date of Birth  </label> <input type="date" required> <br><br>
+
+        <!-- gender -->
+
+        <label>Gender : </label><input type="radio" value="male" name="gmale"> Male 
+        <input type="radio" value="female" name="gfemale"> Female
+         <input type="radio" value="Third Gender" name="thirdgender"> Third Gender <br><br>
+
+         <!-- address -->
+
+        <label>Enter your Address</label><br>
+        <input type="text" name="add1" placeholder="Flat No or Door No">
+        <input type="text"name="add2"  placeholder="Street Name or Area"><br><br>
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="state" placeholder="State"><br><br>
+        <input type="number" name="pincode" placeholder="Pincode">
+
+        <!-- country -->
+        <select name="Country" required>
+            <option value="Select country">Select country</option>
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="Japan">Japan</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <label>Enter Password</label><br>
+        <input type="password" name="pswrd" placeholder="min 8 characters" maxlength="10" required> <br><br>
+        <label>Confirm Password</label><br>
+        <input type="password" name="ppswrd" placeholder=" Confirm Password" required> <br>
+        <p>Existing User ?&nbsp<a href="#">Login </a ><br><br>
+        <button type="submit">Submit</button>
+
+    </form>    
+    <hr>
+
+    <!-- Subscription Form -->
+
+    <h2 align="center">Subscription-Form</h2>
+    <form  method="POST"enctype="multipart/form-data">
+        <label>Full Name</label><br>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="mname"placeholder="Middle Name">
+        <input type="text" name="lname"placeholder="Last Name" required><br><br>
+        <labe>E-mail</labe><br>
+        <input type="email"name="email" placeholder="xyz@gmail.com" required><br><br>
+        <labe>Phone Number</labe><br>
+        <input type="text" name="phnnum"placeholder="Ex: 1234567890" maxlength="10" required><br><br>
+        
+         <!-- address -->
+
+        <label>Address</label><br>
+        <input type="text" name="add1"placeholder="Flat No or Door No">
+        <input type="text"name="add2"placeholder="Street Name or Area"><br><br>
+        <input type="text"name="city"placeholder="City">
+        <input type="text"name="state"placeholder="State"><br><br>
+        <input type="number"name="pincode" placeholder="Pincode">
+
+        <!-- country -->
+        <select name="Country" required>
+            <option value="Select country">Select country</option>
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="Japan">Japan</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
+        <!-- Subcription plan -->
+        <label required>Choose Subcription Plan</label><br>
+        <!-- <input type="checkbox">Monthly Plan - $4.99<br>
+        <input type="checkbox">6 Month Plan - $29.99<br>
+        <input type="checkbox">Yearly Plan - $59.99<br><br> -->
+        <input type="radio" value="Monthly Plan - $4.99" name="plan">Monthly Plan - $4.99 <br>
+        <input type="radio" value="6 Month Plan - $29.99" name="plan">6 Month Plan - $29.99 <br>
+        <input type="radio" value="Yearly Plan - $59.99" name="plan">Yearly Plan - $59.99 <br><br>
+
+        <!-- Credit Card -->
+
+        <label>Credit Card Details</label><br>
+        <input type="text"name="fname" placeholder="First Name" required>
+        <input type="text"name="lname" placeholder="Last Name" required><br><br>
+        <input type="text"name="cnum" placeholder="Credit Card Number" required>
+        <input type="month"name="expdate" placeholder="Expiry Date" required><br><br>
+        <input type="text"name="cvvnum" placeholder="CVV number" required><br><br>
+
+        <button type="submit" ><strong>Subscribe</strong></button>
+   
+    </form>    
+    <hr>
+
+    <!-- Contact Form -->
+    <h2 align="center">Contact-Form</h2>
+    <form  method="POST" enctype="multipart/form-data">
+        <label>Your Name</label><br>
+        <input type="text"name="fullname" placeholder="Your Name" required><br><br>
+        <label>Your Email</label><br>
+        <input type="email" name="email"placeholder="xyz@gmail.com" required><br><br>
+        <label>Your Phone Number</label><br>
+        <input type="text" name="phnnum" placeholder="Ex: 1234567890" maxlength="10" required><br><br>
+        <textarea  cols="50" rows="5"name="fbtxt" placeholder="Your Text"></textarea> <br><br>
+        <button type="submit"><strong>Submit</strong></button>  
+    </form>
+    <hr>
+
+    <!-- Feedback form -->
+    <h2 align="center">Feedback-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label >Your name</label><br>
+        <input type="text"name="fullname" placeholder="Your Name" required><br><br>
+        <!-- course selection -->
+        <label >Select course you attended</label>
+        <select name="course"required >
+            <option value="">Select Course</option>
+            <option value="">Html</option>
+            <option value="">Css</option>
+            <option value="">Javascript</option>
+            <option value="">Bootstrap</option>
+            <option value="">React JS</option>
+        </select><br><br>
+
+        <!-- choices  -->
+
+        <label>Did you enjoy Todays' Session</label>&nbsp;
+        <input type="radio" name="yes-no">Yes 
+        <input type="radio"name="yes-no">No<br><br>
+
+        <label >Rate the class out of 5</label>&nbsp;
+        <input type="radio" name="abc">1
+        <input type="radio" name="abc">2
+        <input type="radio" name="abc">3
+        <input type="radio" name="abc">4
+        <input type="radio" name="abc">5 <br><br>
+
+        <label>Was the Tutor clear in Explaining ?</label>&nbsp;
+        <input type="radio" name="o">Yes 
+        <input type="radio"name="o">No<br><br>
+        
+        <label> Rate out of 5 - " How is Tutor's Explanation" </label>&nbsp;
+        <input type="radio" name="y">1
+        <input type="radio" name="y">2
+        <input type="radio" name="y">3
+        <input type="radio" name="y">4
+        <input type="radio" name="y">5 <br><br>
+
+        <label>Are you new to this course ?</label>&nbsp;
+        <input type="radio" name="no">Yes 
+        <input type="radio"name="no">No<br><br>
+        
+        <label> Rate yor previous Knowledge in the course</label>&nbsp;
+        <input type="radio" name="yes">1
+        <input type="radio" name="yes">2
+        <input type="radio" name="yes">3
+        <input type="radio" name="yes">4
+        <input type="radio" name="yes">5 <br><br>
+
+        <label >DId you had any issues or Suggestions</label><br>
+        <textarea  cols="50" rows="8" name="issuestxt"placeholder="Your issues or suggestion"></textarea><br><br>
+        <button type="submit"><strong>Submit</strong></button>
+    </form>
+    <hr>
+
+    <!-- MCQ form -->
+
+    <h2 align="center">MCQ-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="text" name="fname"placeholder="Full Name" maxlength="20" minlength="5" required><br><br>
+        <input type="test" name="rollnum:"placeholder="Roll No" maxlength="12" required><br><br>
+        Date of Birth :<input type="date" name="date"><br><br>
+        <label >All the Questions are compulsary</label><br><br>
+
+        <label required>1. Sun rises in the</label><br>
+        <input type="radio"name="qstion 2" value="east">east 
+        <input type="radio" name="qstion 2"value="west">west 
+        <input type="radio" name="qstion 2"value="north">north 
+        <input type="radio" name="qstion 2"value="south">south <br>
+
+        <label required>2. Pick the odd one</label><br>
+        <input type="radio"name="qstion 1" >Hills 
+        <input type="radio"name="qstion 1" >Mountains
+        <input type="radio"name="qstion 1" >River 
+        <input type="radio" name="qstion 1">Peak<br>
+
+        <label >3. Country that has Largest Country</label><br>
+        <input type="radio"name="qstion 3" value="india" >India
+        <input type="radio" name="qstion 3" value="china">China 
+        <input type="radio" name="qstion 3"value="russia">Russia 
+        <input type="radio" name="qstion 3"value="australia">Australia <br><br
+        >
+        <button type="submit"><strong>submit</strong></button>
+     </form>  
+     <hr>
+    <!-- Order form -->
+
+    <h2 align="center">Order-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="">Products Available</label>&nbsp;
+        <select name="product"value="select product" required>Select product
+            <option value="select product">Select product</option>
+            <option value="select product"> Product-1</option>
+            <option value="select product"> Product-2</option>
+            <option value="select product"> Product-3</option>
+            <option value="select product"> product-4</option>
+        </select><br><br>
+        <input type="text"name="fullname"placeholder="Full Name"required> <br><br>
+        <input type="password" name="pswrd" placeholder="password"required> <br><br>
+        <input type="text"name="phnnum"placeholder="Mobile number"required> <br><br>
+        <input type="text"name="email"placeholder="Email"required><br><br>
+        <label for="">Delivery Address</label><br><br>
+        <input type="text" name="add1"placeholder="Flat No or Door No"required>
+        <input type="text"name="add2"placeholder="Street Name or Area"required><br><br>
+        <input type="text"name="city"placeholder="City"required>
+        <input type="text"name="state"placeholder="State"required><br><br>
+        <input type="number"name="pincode" placeholder="Pincode"required><br><br>
+        
+        <label >Payment Method</label>&nbsp;
+        <select name="paymentmethod" required>
+            <option value="selectpayment">Select Payment</option>
+            <option value="creditcard">Credit Card</option>
+            <option value="debitcard">Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="netbanking">Net Banking</option>
+            <option value="cod">Cash on Delivery</option>
+
+        </select><br><br>
+        <button type="submit" value="place order"><strong>Place Order</strong></button>
+        <button type="reset" value="cancel">Cancel Order</button>
+
+    </form>
+    <hr>
+
+    <!-- Payment form -->
+
+    <h2 align="center">Payment-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="text"name="fullname"placeholder="Full Name"required> <br><br>
+        <input type="text"name="phnnum"placeholder="Mobile number"required> <br><br>
+
+        
+        <label >Payment Method</label>&nbsp;
+        <select name="paymentmethod" required>
+            <option value="selectpayment">Select Payment</option>
+            <option value="creditcard">Credit Card</option>
+            <option value="debitcard">Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="netbanking">Net Banking</option>
+        </select><br><br>
+
+        <label>Card Details</label><br>
+        <input type="text"name="fname" placeholder="First Name" required>
+        <input type="text"name="lname" placeholder="Last Name" required><br><br>
+        <input type="text"name="cnum" placeholder="Credit Card Number" required>
+        <input type="month"name="expdate" placeholder="(Month,Year)" required><br><br>
+        <input type="text"name="cvvnum" placeholder="CVV number" required><br><br>
+
+        <button type="submit" ><strong>Pay Now</strong></button>
+    </form>
+    <hr>
+
+    <!-- Donation Form -->
+
+    <h2 align="center">Donation-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Donar Name</label>&nbsp;
+        <input type="text"name="fullname"placeholder="Full Name"required> <br><br>
+        <label>Donar Contact Number</label>&nbsp;
+        <input type="text"name="phnnum"placeholder="Mobile number"required> <br><br>
+        
+        
+        <label >Donation Amount</label>&nbsp;
+        <select name="donation amount" required>
+            <option value="select amount">Select Amount</option>
+            <option value="1000">1000</option>
+            <option value="1000">2000</option>
+            <option value="1000">3000</option>
+            <option value="1000">5000</option>
+            <option value="1000">10000</option>
+            <input type="number" placeholder="min 1000" minlength="1000" >
+        </select><br><br>
+        <label >Message to the Reciever (optional)</label><br>
+        <textarea cols="30" rows="4" placeholder="your message"></textarea> <br><br>
+        <button type="submit"><strong>Donate</strong></button>
+   </form>
+   <hr>
+
+   <!-- Search Form -->
+
+   <h2 align="center"> Search-Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="text" name="Place" placeholder="What Your Looking For ?">
+        <input type="text"  name="location"placeholder="Location"><br><br> 
+        <button type="submit" value="submit"><strong>SEARCH</strong></button>
+    </form>
+    <hr>
+    
+
+    <!-- Booking form -->
+
+    <h2 align="center">Booking Form</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="">Name</label>&nbsp;
+        <input type="text"name="fname" placeholder="First Name">&nbsp;
+        <input type="text"name="lname" placeholder="Last Name"><br><br>
+        <label for="">Mobile number</label>&nbsp;
+        <input type="number" name="phnnum"><br><br>
+        <label for="">Email id</label>&nbsp;
+        <input type="text" name="email" placeholder="Email"><br><br>
+                    
+        <label><strong>Depature time</strong></label>&nbsp;
+        <input type="time" name="time"><br><br>
+        <label><strong>Depature date</strong></label>&nbsp;
+        <input type="date"name="date"><br><br>
+        <label><strong>Return Date</strong></label>&nbsp;
+        <input type="date" name="returndate"><br><br>
+        <label>Number of passenger/guests</label>&nbsp;
+        <select name="Numofpass">
+                <option value="pleaseselect">Please Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 or more</option>
+        </select> <br><br>
+                    
+        <label>Types of room/ticket</label>&nbsp;
+        <select name="seattype">
+            <option value="pleaseselect">Please Select</option>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="ultradeluxe">Ultra-Deluxe</option>
+        </select> <br><br>
+        
+        <button type="submit"><strong>Book Now</strong></button>
+        </form>
+        <hr>
+
+        <!-- Exam Details form -->
+
+        <h2 align="center"> Exam_Details-FORM</h2>
+        <form method="POST" enctype="multipart/form-data">
+        <label><strong>Anna university</strong></label><br><br>
+            College Code :         <input type="number" name="college code" maxlength="4" ><br><br>
+            College Name  :        <input type="text" name="college name" ><br><br>
+            Registration number :  <input type="number" name="reg no"  maxlength="12"><br><br>
+            Name of the candidate : <input type="text"name="candidate name=" ><br><br>
+            Degree :               <input type="text"name="Degree"><br><br>
+            Question paper code :  <input type="text " name="Question paper code"><br><br>
+            Subject code :         <input type="text" name="Subject code"><br><br>
+            Subject Name :         <input type="text" name="subject Name"><br><br>
+            Date :                 <input type="date" name="date"><br> <br>
+            <input type="checkbox">All particulars given above are verfied and correct<br><br>
+            Signature :            <input type="text" name="sign" placeholder="Enter Full Name"><br><br>
+            <button type="submit"><strong>Submit</strong></button>
+
+        </form>
+        <hr>
+        <!-- Application Form -->
+
+        <h2 align="center">Admission Form</h2>
+        <h3>Student Admission Form</h3>
+
+        <form  method="post">
+            1.Name of Student :<input type="text" name="fname" required><br> <br>
+            2.Date of Birth: <input type="date" name="dob" required> <br> <br>
+            3.Gender:   <input type="radio" name="std-gender" value="male">Male
+                        <input type="radio" name="std-gender" value="female">Female
+                        <input type="radio" name="std-gender" value="thirdgender">Third gender <br><br>
+            4.Father's Name: <input type="text" name="fathername" required> <br> <br>
+            5.Mother's Name: <input type="text"name="mothername" required> <br> <br>
+            6.Father's Occupation:  <input type="text" name="focc" required> &nbsp; Mother's Occupation<input type="text" name="mocc" required> <br> <br>
+            7.Permanent Address :<br>
+            <input type="text" name="add1"placeholder="Flat No or Door No">
+            <input type="text"name="add2"placeholder="Street Name or Area"><br><br>
+            <input type="text"name="city"placeholder="City">
+            <input type="text"name="state"placeholder="State"><br><br>
+            <input type="number"name="pincode" placeholder="Pincode"> <br><br>
+            8.Current Address :<br>
+            <input type="text" name="add1"placeholder="Flat No or Door No">
+            <input type="text"name="add2"placeholder="Street Name or Area"><br><br>
+            <input type="text"name="city"placeholder="City">
+            <input type="text"name="state"placeholder="State"><br><br>
+            <input type="number"name="pincode" placeholder="Pincode"> <br><br>
+            9.Phone No: &nbsp; Home&nbsp;<input type="number" name="hphnnum" required> &nbsp; Office <input type="number" name="ophnnum"><br><br>
+            10.Name and Address of Local Guardian: <br>
+            <textarea name="guardian"></textarea> <br><br>
+            11.Nationality: <input type="text" name="nationality" required><br><br>
+            12.Class in which Admission Sought : <input type="text" name="newclass" required><br><br>
+            13.Mark scored in previous class: <input type="number" name="oldclass" placeholder="In Percentage %" required><br><br>
+            <button type="submit"><strong>Submit Admission Form</strong></button>
+        </form>
+        <hr>
+   
+
+</body>
+</html>
+&nbsp;
